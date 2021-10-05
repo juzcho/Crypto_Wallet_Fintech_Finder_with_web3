@@ -1,26 +1,26 @@
-# Module 18 Challenge: PyChain Ledger
+# Module 19 Challenge: Fintech Finder and Crypto Wallet
 
 ## Table of Contents
 
-[PyChain Ledger Overview](https://github.com/juzcho/Module_18_Challenge_PyChain_Ledger#pychain-ledger-overview)
+[Fintech Finder and Crypto Wallet]()
 
-[Technologies](https://github.com/juzcho/Module_18_Challenge_PyChain_Ledger#technologies)
+[Technologies]()
 
-[Installation Guide](https://github.com/juzcho/Module_18_Challenge_PyChain_Ledger#installation-guide)
+[Installation Guide]()
 
-[Examples](https://github.com/juzcho/Module_18_Challenge_PyChain_Ledger#examples)
+[Examples]()
 
-[Usage](https://github.com/juzcho/Module_18_Challenge_PyChain_Ledger#usage)
+[Usage]()
 
-[Contributors](https://github.com/juzcho/Module_18_Challenge_PyChain_Ledger#contributors)
+[Contributors]()
 
-[License](https://github.com/juzcho/Module_18_Challenge_PyChain_Ledger#license)
+[License]()
 
 ---
 
-## PyChain Ledger Overview
+## Fintech Finder and Crypto Wallet
 
-This project is about creating a streamlit application called PyChain ledger to record the transaction data into a blockchain without the option to delete any block from the ledger but instead continue to add data to the block. It would also test the validity of the blockchain and create a dataframe that would show the list of transaction inside the blockchain. 
+This project is about creating a streamlit application called Fintech Finder to hire a fintech professional and pay them with using the user's crypto wallet.  This tool has been integrated with the Ethereum blockchain network in order to enable the customers to instantly pay the Fintech professionals whom they hire with cryptocurrency.
 
 ---
 
@@ -40,28 +40,58 @@ This project leverages **[python version 3.8.5](https://www.python.org/downloads
 
 * [hashlib](https://docs.python.org/3/library/hashlib.html)- This module implements a common interface to many different secure hash and message digest algorithms. In our application, we use SHA256 to return a hexdigest.
 
+* [web3.py](https://web3py.readthedocs.io/en/stable/overview.html) - This is a Python library for connecting to and performing operations on Ethereum-based blockchains.
+
+* [eth-tester](https://pypi.org/project/eth-tester/) - This is a Python library that provides access to the tools we’ll use to test Ethereum-based applications.
+
+* [mnemonic](https://pypi.org/project/mnemonic/) - This is a Python implementation for generating a 12- or 24-word mnemonic seed phrase based on the BIP-39 standard.
+
+* [bip44](https://pypi.org/project/bip44/) - This is a Python implementation for deriving hierarchical deterministic wallets from a seed phrase based on the BIP-44 standard.
+
+* [Infura API](https://infura.io/register) - An API that provides instant access to the Ethereum network over HTTPS (i.e., the web). You will need to create an account with Infura.
 
 ---
 ## Installation Guide
 
-### 1. Install the application, Streamlit into your dev environment:
+### 1. Install the application, Streamlit and Web3.py into your dev or base environment:
 
 `pip install streamlit`
 
-### 2. Use VSCODE to view and edit pychain.py file.
+`pip install web3==5.17`
+
+`pip install eth-tester==0.5.0b3` or  `pip install eth-tester`
+
+`pip install mnemonic`
+
+`pip install bip44`
+
+### 2. Use VSCODE to view and edit the fintech_finder.py
 
 ---
 ## Examples
 
-Here are some of the data we did for this model.
+### **This gif should show you what happens when payment is sent on Etherscan.** 
 
-### **This gif should show how to use the Pychain ledger application:** 
+#### *Fintech Finder Send Transaction (Streamlit):*
 
-![Pychain](./Images/pychain.gif)
+![Fintech Finder Send Transaction](./Images/fintech-finder-send-transaction.gif)
 
-![Pychain Ledger](./Images/pychain-ledger.png)
+#### *Etherscan Sender Info Address:*
 
-![Pychain Ledger](./Images/pychain-ledger-2.png)
+![Etherscan Sender Address Balance](./Images/etherscan-address-balance.gif)
+
+*Screenshot of Sender Address:*
+
+![Etherscan Sender Address Balance](./Images/etherscan-sender-info.png)
+
+
+#### *Transaction Hash and Recipient Transaction Histories:*
+
+![Transaction Hash and Recipient Transaction Histories:](./Images/recipient-transaction-hash-address-balance.gif)
+
+*Screenshot of Transaction Hash*
+![Transaction Hash:](./Images/recipient-transaction-hash.png)
+
 ---
 
 ## Usage
@@ -70,11 +100,24 @@ Here are some of the data we did for this model.
 
 1. Go to your terminal and direct your folder to where the file for our pychain.py is located. Then on your terminal, type the following:
 
-    `streamlit run pychain.py` 
+    `streamlit run fintech_finder.py` 
 
-This should open up a new internet browser automatically, then it will allow you to interact with the text boxes to input your sender, receiver and amount.
+    This should open up a new internet browser automatically, then it will allow you to interact with the software.
 
-![Streamlit](./Images/streamlit_terminal.png)
+    ![Streamlit](./Images/streamlit-fintech-finder.png)
+
+2. To use the application on Streamlit:
+
+- Select a Person: Review each person's information since it gives you how much their hourly rate is.
+- Input the Number of Hours: Remember to only hire them based on how much remaining crypto you still have.
+
+    ![Streamlit](./Images/streamlit-interface-fintech-finder.png)
+
+3. To use the Kovan Etherscan, go to this website: https://kovan.etherscan.io/ 
+
+- Copy and paste the Sender Address Hash (check screen shot above to know where to get this), then click search. It should show the list of recent transaction and current balance you still have in the crypto wallet. Check the gif on Examples section to see the rest. 
+
+    ![Etherscan sender hash](./Images/sender-hash-etherscan.png)
 
 ---
 
