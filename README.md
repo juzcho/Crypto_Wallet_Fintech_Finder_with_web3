@@ -2,19 +2,19 @@
 
 ## Table of Contents
 
-[Fintech Finder and Crypto Wallet]()
+[Fintech Finder and Crypto Wallet](https://github.com/juzcho/Module-19-Crypto-Wallet-Fintech-Finder#fintech-finder-and-crypto-wallet)
 
-[Technologies]()
+[Technologies](https://github.com/juzcho/Module-19-Crypto-Wallet-Fintech-Finder#technologies)
 
-[Installation Guide]()
+[Installation Guide](https://github.com/juzcho/Module-19-Crypto-Wallet-Fintech-Finder#installation-guide)
 
-[Examples]()
+[Examples](https://github.com/juzcho/Module-19-Crypto-Wallet-Fintech-Finder#examples)
 
-[Usage]()
+[Usage](https://github.com/juzcho/Module-19-Crypto-Wallet-Fintech-Finder#usage)
 
-[Contributors]()
+[Contributors](https://github.com/juzcho/Module-19-Crypto-Wallet-Fintech-Finder#contributors)
 
-[License]()
+[License](https://github.com/juzcho/Module-19-Crypto-Wallet-Fintech-Finder#license)
 
 ---
 
