@@ -1,4 +1,4 @@
-# Module 19 Challenge: Fintech Finder and Crypto Wallet
+# Fintech Finder and Crypto Wallet
 
 ## Table of Contents
 
