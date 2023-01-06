@@ -125,7 +125,7 @@ This project leverages **[python version 3.8.5](https://www.python.org/downloads
 
 Contributed by: Justine Cho
 
-Email: juz317_cho@yahoo.com
+Email: chojustine0@gmail.com
 
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/justinecho)
 
